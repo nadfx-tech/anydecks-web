@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>anydecks</title>
+<link rel="icon" href="/icon.png">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header><a class="brand" href="/"><img src="/icon.png" alt="">anydecks</a></header>
+
+  <!-- Invitation links: anydecks.app/join/CODE?from=NAME (GitHub Pages serves this page for them). -->
+  <section class="invite" id="invite" hidden>
+    <h1 id="title">You're invited to anydecks</h1>
+    <p style="color:var(--muted)">Your invitation code</p>
+    <div class="code" id="code"></div><br>
+    <a class="button" id="open" href="#">Open in anydecks</a>
+    <div class="steps">
+      <p>Nothing happens? Open anydecks, go to <strong>Setup</strong>, paste this link into the field under <strong>Session</strong> and press <strong>Join</strong>.</p>
+      <p>Don't have anydecks yet? Ask the DJ who invited you for the app.</p>
+    </div>
+  </section>
+
+  <section class="invite" id="missing" hidden>
+    <h1>Not here.</h1>
+    <p style="color:var(--muted)"><a href="/">Back to anydecks</a></p>
+  </section>
+
+  <footer><a href="/">Home</a><a href="/privacy.html">Privacy</a></footer>
+</div>
+<script>
+  (function () {
+    var m = location.pathname.match(/\/join\/([A-Za-z0-9]{4,12})\/?$/);
+    if (!m) { document.getElementById("missing").hidden = false; return; }
+    var code = m[1].toUpperCase();
+    var from = new URLSearchParams(location.search).get("from");
+    if (from) document.getElementById("title").textContent = from.slice(0, 40) + " invites you to anydecks";
+    document.getElementById("code").textContent = code;
+    var link = "anydecks://join/" + code + (from ? "?from=" + encodeURIComponent(from) : "");
+    document.getElementById("open").href = link;
+    document.getElementById("invite").hidden = false;
+  })();
+</script>
+</body>
+</html>
