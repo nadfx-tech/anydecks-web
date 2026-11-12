@@ -35,6 +35,9 @@
     var m = location.pathname.match(/\/join\/([A-Za-z0-9]{4,12})\/?$/);
     if (!m) { document.getElementById("missing").hidden = false; return; }
     var code = m[1].toUpperCase();
+    // Sign-up lives on get.anydecks.app now (register there, then download).
+    location.replace("https://get.anydecks.app/join/" + code + location.search);
+    return;
     var from = new URLSearchParams(location.search).get("from");
     if (from) document.getElementById("title").textContent = from.slice(0, 40) + " invites you to anydecks";
     document.getElementById("code").textContent = code;
