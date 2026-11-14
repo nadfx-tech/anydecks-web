@@ -13,25 +13,28 @@
 
   <section class="doc">
     <h1>Privacy</h1>
-    <p class="date">As of 11 November 2026 · <a href="#de">Deutsch</a></p>
+    <p class="date">As of 14 November 2026 · <a href="#de">Deutsch</a></p>
 
     <p>anydecks is a desktop app for DJs who play back to back from different places. It is in a private beta. This page explains what data the app and its meeting server handle, and why.</p>
 
     <h2>What we store</h2>
     <ul>
       <li><strong>Your account:</strong> your DJ name, a key generated on your computer (so the server recognises it), your friends and open friend requests, the date the account was made, and – if you fill them in – bio, links and styles.</li>
-      <li><strong>Sign-in with Google or Facebook:</strong> only the provider's anonymous user number (for example "google:1234…"), so you get the same account on another computer. anydecks asks only for your identity (<code>openid</code> / <code>public_profile</code>). We do not receive or store your e-mail address, contacts or anything else from your Google or Facebook account.</li>
+      <li><strong>Sign-in with Google:</strong> only Google's anonymous user number (for example "google:1234…"), so you get the same account on another computer. anydecks asks only for your identity (<code>openid</code>). We do not receive or store your e-mail address, contacts or anything else from your Google account.</li>
+      <li><strong>Sign-in with an e-mail code:</strong> we store only a one-way fingerprint of your address (SHA-256), never the address itself – enough to recognise it the next time, not to read it back. To send you the six-digit code, your address and the code are passed once to our mail service <strong>Brevo</strong> (Sendinblue SAS, France, EU), which delivers the e-mail on our behalf. The code is valid for 10 minutes and kept in memory only.</li>
+      <li><strong>Your computer's pass:</strong> a note signed by our server saying that this computer belongs to your account (valid 30 days). It is stored on your computer and shown to your partner's app, so only signed-in DJs can connect.</li>
       <li><strong>Invitations:</strong> the invitation code, who made it and who used it.</li>
     </ul>
 
     <h2>What we use briefly</h2>
     <ul>
       <li><strong>Internet address (IP) and port</strong> of your computer while the app is open, so you and your partner can find each other. It is kept in memory only while you are online.</li>
-      <li><strong>A small server log</strong>: once a minute, which DJ names are online and whether a connection uses the server as a relay. It overwrites itself after about 1 MB.</li>
+      <li><strong>A small server log</strong>: once a minute how many people are online, and events such as "signed in with Google" or "new invitation" – without names, addresses or e-mail addresses. It overwrites itself after about 1 MB.</li>
+      <li><strong>On get.anydecks.app</strong> (sign-up, downloads): one cookie that keeps you signed in – until you close the browser (at most 12 hours), or 30 days after your last visit if you choose "Stay signed in". The server keeps only a fingerprint of it. It is needed for the page to work and is not used for anything else.</li>
     </ul>
 
     <h2>Music, sound and files</h2>
-    <p>Your mix and your tracks go directly from your computer to your partner's, encrypted end to end. If a direct connection is not possible, the encrypted data passes through our server, which cannot read it and does not store it. Tracks shared in Booth are deleted on your partner's computer when the app closes. Recordings are saved only on your own computer.</p>
+    <p>Your mix and your tracks go directly from your computer to your partner's, encrypted end to end. If a direct connection is not possible, the encrypted data passes through our server, which cannot read it and does not store it. Tracks shared in Booth are kept in your partner's memory; what does not fit is stored encrypted on their disk with a key that exists only while the app runs. They are deleted when the app closes, and one minute after you leave the session. Recordings and your play history are saved only on your own computer. anydecks reads your DJ program's library (rekordbox, VirtualDJ, Serato) only on your computer; it is never uploaded.</p>
 
     <h2>What we don't do</h2>
     <p>No advertising, no tracking, no analytics, no selling or sharing of data. The app uses the microphone input only to hear the channel your mixer is connected to; nothing is recorded unless you press Record.</p>
@@ -50,11 +53,11 @@
     <h1>Datenschutz</h1>
     <p>anydecks ist eine Desktop-App für DJs, die von verschiedenen Orten aus Back-to-Back auflegen (geschlossene Beta).</p>
     <h2>Gespeichert</h2>
-    <p>DJ-Name, ein auf Deinem Rechner erzeugter Schlüssel, Freunde und offene Anfragen, Anlegedatum, freiwillig Bio, Links und Styles. Bei Anmeldung mit Google oder Facebook nur die anonyme Nutzernummer des Anbieters – keine E-Mail-Adresse, keine Kontakte. Einladungen: Code, wer eingeladen hat, wer ihn genutzt hat.</p>
+    <p>DJ-Name, ein auf Deinem Rechner erzeugter Schlüssel, Freunde und offene Anfragen, Anlegedatum, freiwillig Bio, Links und Styles. Bei Anmeldung mit Google nur Googles anonyme Nutzernummer – keine E-Mail-Adresse, keine Kontakte. Bei Anmeldung mit E-Mail-Code nur ein nicht umkehrbarer Fingerabdruck der Adresse (SHA-256), nie die Adresse selbst; zum Versand des sechsstelligen Codes gehen Adresse und Code einmal an unseren Mail-Dienst <strong>Brevo</strong> (Sendinblue SAS, Frankreich, EU), der die Mail in unserem Auftrag zustellt. Der Code gilt 10 Minuten und liegt nur im Arbeitsspeicher. Dein Rechner bekommt einen vom Server unterschriebenen Ausweis (30 Tage), der auf Deinem Rechner liegt. Einladungen: Code, wer eingeladen hat, wer ihn genutzt hat.</p>
     <h2>Kurzzeitig verarbeitet</h2>
-    <p>IP-Adresse und Port, solange die App online ist (nur im Arbeitsspeicher), damit Ihr Euch findet. Ein kleines Protokoll: einmal pro Minute, welche DJ-Namen online sind; es überschreibt sich nach etwa 1 MB.</p>
+    <p>IP-Adresse und Port, solange die App online ist (nur im Arbeitsspeicher), damit Ihr Euch findet. Ein kleines Protokoll: einmal pro Minute, wie viele online sind, und Ereignisse wie „mit Google angemeldet“ – ohne Namen, Adressen oder E-Mail-Adressen; es überschreibt sich nach etwa 1 MB. Auf get.anydecks.app ein Cookie, das Dich angemeldet hält – bis zum Schließen des Browsers (höchstens 12 Stunden) oder mit „angemeldet bleiben“ 30 Tage nach dem letzten Besuch; der Server speichert nur einen Fingerabdruck davon (technisch nötig, sonst nichts).</p>
     <h2>Musik und Dateien</h2>
-    <p>Mix und Tracks gehen Ende-zu-Ende-verschlüsselt direkt zum Partner, notfalls verschlüsselt über unseren Server, der sie weder lesen noch speichern kann. Geteilte Tracks werden beim Beenden gelöscht, Aufnahmen bleiben nur auf Deinem Rechner.</p>
+    <p>Mix und Tracks gehen Ende-zu-Ende-verschlüsselt direkt zum Partner, notfalls verschlüsselt über unseren Server, der sie weder lesen noch speichern kann. Geteilte Tracks liegen beim Partner im Arbeitsspeicher, was nicht passt verschlüsselt auf seiner Platte (Schlüssel nur, solange die App läuft); gelöscht beim Beenden und eine Minute, nachdem Du die Session verlassen hast. Aufnahmen und Play-Historie bleiben auf Deinem Rechner. Deine Sammlung (rekordbox, VirtualDJ, Serato) wird nur auf Deinem Rechner gelesen, nie hochgeladen.</p>
     <h2>Nicht</h2>
     <p>Keine Werbung, kein Tracking, keine Weitergabe. Der Server steht in Deutschland. Auskunft, Berichtigung, Löschung und Beschwerde bei einer Aufsichtsbehörde nach DSGVO Art. 15–21 und 77. Kontakt: <a href="mailto:privacy@anydecks.app">privacy@anydecks.app</a>.</p>
   </section>
