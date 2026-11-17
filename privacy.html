@@ -13,136 +13,121 @@
 
   <section class="doc">
     <h1>Privacy</h1>
-    <p class="date">Last updated: November 17, 2026 · <a href="#de">Deutsch</a></p>
-    <p>With anydecks, you can play back-to-back with other DJs, wherever you are.</p>
-    <p>Here's what data anydecks processes, how it's used, and how long it's kept.</p>
+    <p class="date">Last updated: November 17, 2026</p>
+    <p>anydecks lets you play back-to-back with other DJs, wherever you are.</p>
+    <p>This page explains what data anydecks processes, why, and how long we keep it.</p>
 
     <h2>1. Your account</h2>
-    <p>When you create an account, we store your DJ name, a key generated on your computer, your friends and pending friend requests, and the date your account was created.</p>
-    <p>You can also add a bio, links, and your preferred music styles.</p>
-    <p>We use this information to manage your account and connect you with other DJs.</p>
-    <p>Legal basis: Article 6(1)(b) GDPR.</p>
+    <p>When you create an account, we store your DJ name, a key generated on your computer, your friends and pending friend requests, and the date you joined.</p>
+    <p>You can also add a bio, links and the styles you play.</p>
+    <p>We use this to run your account and to connect you with other DJs.</p>
+    <p>Legal basis: Art. 6(1)(b) GDPR.</p>
 
     <h2>2. Signing in</h2>
     <h3>With Google</h3>
-    <p>When you sign in with Google, we receive only your unique Google user ID. This allows us to recognise your account across devices.</p>
-    <p>We use OpenID identity access only. We don't receive your email address, contacts, or other Google account information.</p>
-    <p>Google may process data independently during sign-in. Google's privacy policy also applies.</p>
+    <p>If you sign in with Google, we receive only your Google user ID. That's how we recognise your account on every computer you use.</p>
+    <p>We request nothing but your identity (OpenID). We never receive your email address, your contacts or any other data from your Google account.</p>
+    <p>Google may process data of its own during sign-in. Google's privacy policy applies to that.</p>
     <h3>With an email code</h3>
-    <p>Alternatively, you can sign in using a six-digit code sent to your email address.</p>
-    <p>On our server, we store a SHA-256 hash of your email address, not the address itself. This allows us to recognise your account when you return.</p>
-    <p>A hash isn't completely anonymous. Under certain circumstances, it may be possible to identify the original address by comparing hashes against known email addresses.</p>
-    <p>We use Brevo (Sendinblue SAS, France) to deliver the code. Your email address and verification code are passed to Brevo for this purpose.</p>
-    <p>The code expires after ten minutes and is held temporarily in memory only.</p>
-    <h3>Device authentication</h3>
-    <p>When you sign in, your computer receives a digitally signed authentication token, valid for 30 days. This allows other anydecks apps to verify that you're signed in.</p>
-    <p>The token is stored locally on your computer.</p>
-    <p>Legal basis for sign-in: Article 6(1)(b) GDPR.</p>
+    <p>You can also sign in with a six-digit code that we send to your email address.</p>
+    <p>We don't store your email address – only a SHA-256 hash of it, so we can recognise your account when you come back.</p>
+    <p>A hash isn't fully anonymous: anyone who already knows an address can compute its hash and compare.</p>
+    <p>The email is sent by Brevo (Sendinblue SAS, France). For this, your email address and the code are passed to Brevo.</p>
+    <p>The code expires after ten minutes and is only ever kept in memory.</p>
+    <h3>Your computer's pass</h3>
+    <p>After you sign in, your computer receives a pass signed by our server, valid for 30 days. It lets your partner's app check that you're signed in.</p>
+    <p>The pass is stored only on your computer.</p>
+    <p>Legal basis: Art. 6(1)(b) GDPR.</p>
 
-    <h2>3. Friends, Lobby and Board</h2>
+    <h2>3. Friends, lobby and board</h2>
     <h3>Invitations</h3>
-    <p>We store invitation codes and information about who created and used them.</p>
-    <h3>DJ Lobby</h3>
-    <p>When you enable the lobby, other signed-in DJs can see your DJ name while you're online and send you friend requests.</p>
-    <p>As soon as you disable the lobby, you're no longer visible there.</p>
-    <h3>Availability Board</h3>
-    <p>The board lets you share when you're available to play and add a short message.</p>
-    <p>Your posts are visible to other signed-in DJs along with your DJ name.</p>
-    <p>Entries are automatically deleted once their scheduled time has passed. You can also remove them at any time.</p>
-    <p>Legal basis: Article 6(1)(b) GDPR.</p>
+    <p>We store each invitation code, who created it and who used it.</p>
+    <h3>Lobby</h3>
+    <p>If you turn on the lobby, other signed-in DJs can see your DJ name while you're online and send you a friend request.</p>
+    <p>Turn it off and you disappear from the lobby straight away.</p>
+    <h3>Board</h3>
+    <p>On the board, you can post when you'd like to play, with a short message.</p>
+    <p>Other signed-in DJs see your posts together with your DJ name.</p>
+    <p>Each post is deleted automatically once its time has passed. You can remove it at any time.</p>
+    <p>Legal basis: Art. 6(1)(b) GDPR.</p>
 
     <h2>4. Connections and server logs</h2>
-    <p>To connect you with your DJ partner, our server temporarily processes your IP address and network port.</p>
-    <p>This information is held in memory only while you're online.</p>
-    <p>For technical monitoring, we also record the number of connected users once per minute and general events such as sign-ins and new invitations.</p>
-    <p>The logs contain no DJ names, IP addresses, or email addresses. Older entries are overwritten when the log file reaches approximately 1 MB.</p>
-    <p>Legal bases: Article 6(1)(b) GDPR for establishing connections and Article 6(1)(f) GDPR for maintaining a secure and reliable service.</p>
+    <p>To connect you with your partner, our server needs your IP address and network port. It keeps them in memory only, and only while you're online.</p>
+    <p>To keep the service running smoothly, the server logs how many people are online once a minute, plus general events such as sign-ins and new invitations.</p>
+    <p>The log contains no DJ names, IP addresses or email addresses. Once it reaches about 1 MB, the oldest entries are overwritten.</p>
+    <p>Legal basis: Art. 6(1)(b) GDPR for connecting you, Art. 6(1)(f) GDPR for keeping the service secure and reliable.</p>
 
     <h2>5. Your music stays yours</h2>
-    <h3>Encrypted transmission</h3>
-    <p>Your tracks and your mix are transmitted directly to your DJ partner using end-to-end encryption.</p>
-    <p>If a direct connection isn't possible, the encrypted data is relayed through our server.</p>
-    <p>Our server cannot decrypt or permanently store your music.</p>
+    <h3>End-to-end encrypted</h3>
+    <p>Your tracks and your mix go straight to your partner, end-to-end encrypted.</p>
+    <p>If a direct connection isn't possible, the encrypted data is relayed through our server. The server can't decrypt it and doesn't store it.</p>
     <h3>Shared tracks</h3>
-    <p>Tracks you share with your partner are initially held in their computer's memory.</p>
-    <p>If additional storage is needed, they may be temporarily cached on their local drive in encrypted form. The encryption key is available only while the app is running.</p>
-    <p>Cached data is deleted when the app closes or one minute after you leave the session.</p>
+    <p>Tracks you share are kept in your partner's memory.</p>
+    <p>If they don't fit, the rest is cached on your partner's drive – encrypted, with a key that only exists while the app is running.</p>
+    <p>Everything is deleted when the app closes, or one minute after you leave the session.</p>
     <h3>Recordings and play history</h3>
-    <p>Your recordings and play history remain exclusively on your computer.</p>
-    <h3>Your music library</h3>
-    <p>anydecks can read your local rekordbox, VirtualDJ, or Serato music library.</p>
-    <p>All processing takes place on your computer. Your music library is never uploaded to our servers.</p>
+    <p>Your recordings and play history are stored only on your computer.</p>
+    <h3>Your library</h3>
+    <p>anydecks can read your rekordbox, Traktor, Serato, VirtualDJ or djay Pro library.</p>
+    <p>This happens entirely on your computer. Your library is never uploaded.</p>
 
     <h2>6. Cookies</h2>
-    <p>On get.anydecks.app, we use an essential cookie to keep you signed in.</p>
-    <p>Your session ends when you close your browser, with a maximum duration of twelve hours.</p>
-    <p>If you select "Stay signed in", your session remains valid for up to 30 days after your last visit.</p>
-    <p>Our server stores only a fingerprint of the cookie.</p>
-    <p>The cookie is used exclusively for authentication, not for advertising or tracking.</p>
-    <p>Legal bases: Article 6(1)(b) GDPR and Section 25(2) of the German TDDDG.</p>
+    <p>On get.anydecks.app, we use a single essential cookie to keep you signed in.</p>
+    <p>It expires when you close your browser, after twelve hours at most.</p>
+    <p>If you tick "Stay signed in", it stays valid for up to 30 days after your last visit.</p>
+    <p>Our server stores only a fingerprint of the cookie. It's used to keep you signed in – never for advertising or tracking.</p>
+    <p>Legal basis: Art. 6(1)(b) GDPR and § 25(2) TDDDG (German Telecommunications Digital Services Data Protection Act).</p>
 
-    <h2>7. External services</h2>
-    <p>We don't sell user data or share it for advertising purposes.</p>
-    <p>We use the following external services to operate anydecks:</p>
+    <h2>7. Service providers</h2>
+    <p>We don't sell your data or share it for advertising.</p>
+    <p>To run anydecks, we use:</p>
     <ul>
-      <li>Brevo (Sendinblue SAS, France) to deliver sign-in codes.</li>
-      <li>Google as an optional sign-in provider.</li>
-      <li>Our hosting provider to operate the servers in Germany.</li>
+      <li>Brevo (Sendinblue SAS, France) to send sign-in codes.</li>
+      <li>Google, if you choose to sign in with Google.</li>
+      <li>Our hosting provider, which runs our servers in Germany.</li>
     </ul>
-    <p>Where service providers process personal data on our behalf, the relevant data processing agreements apply.</p>
+    <p>Where a provider processes personal data on our behalf, a data processing agreement is in place.</p>
     <p>Possible transfers of personal data outside the European Economic Area and the safeguards involved still need to be fully verified.</p>
 
-    <h2>8. Data retention and deletion</h2>
-    <p>We keep personal data only as long as needed for its purpose or as required by law.</p>
+    <h2>8. How long we keep your data</h2>
+    <p>We keep personal data only as long as we need it, or as long as the law requires.</p>
     <ul>
-      <li>Account and profile: while your account exists. The exact deletion period following account closure still needs to be defined.</li>
-      <li>Email codes: valid for ten minutes, held in memory only.</li>
-      <li>Device authentication token: valid for 30 days.</li>
+      <li>Account and profile: as long as your account exists. How soon after closing an account it is deleted is still to be decided.</li>
+      <li>Email codes: ten minutes, in memory only.</li>
+      <li>Your computer's pass: 30 days.</li>
       <li>Connection data: only while you're online.</li>
-      <li>Lobby: until you disable it or go offline.</li>
-      <li>Board: until the scheduled time passes or you delete the entry.</li>
-      <li>Server logs: older entries are overwritten when the file reaches approximately 1 MB.</li>
-      <li>Shared tracks: temporary data is deleted when the app closes or one minute after you leave the session.</li>
-      <li>Website sign-in: up to twelve hours, or up to 30 days after your last visit with "Stay signed in" enabled.</li>
+      <li>Lobby: until you turn it off or go offline.</li>
+      <li>Board: until the time of your post has passed or you remove it.</li>
+      <li>Server log: overwritten once it reaches about 1 MB.</li>
+      <li>Shared tracks: deleted when the app closes, or one minute after you leave the session.</li>
+      <li>Website sign-in: twelve hours at most, or up to 30 days after your last visit with "Stay signed in".</li>
     </ul>
 
     <h2>9. Deleting your account</h2>
-    <p>You can request deletion of your account and personal data at any time by emailing <a href="mailto:privacy@anydecks.app">privacy@anydecks.app</a>.</p>
-    <p>We'll delete your data unless applicable legal requirements or other lawful grounds require us to retain it.</p>
+    <p>You can ask us to delete your account and your personal data at any time. Just email <a href="mailto:privacy@anydecks.app">privacy@anydecks.app</a>.</p>
+    <p>We'll delete everything, unless the law requires us to keep it.</p>
 
     <h2>10. Your rights</h2>
-    <p>Under the GDPR, and subject to the applicable legal requirements, you have the following rights:</p>
+    <p>Under the GDPR, you have the right to:</p>
     <ul>
-      <li>Access to your personal data (Article 15).</li>
-      <li>Correction of inaccurate information (Article 16).</li>
-      <li>Erasure of your data (Article 17).</li>
-      <li>Restriction of processing (Article 18).</li>
-      <li>Data portability (Article 20).</li>
-      <li>Objection to certain types of processing (Article 21).</li>
+      <li>access your personal data (Art. 15),</li>
+      <li>have incorrect data corrected (Art. 16),</li>
+      <li>have your data erased (Art. 17),</li>
+      <li>restrict processing (Art. 18),</li>
+      <li>take your data with you (Art. 20),</li>
+      <li>object to certain processing (Art. 21).</li>
     </ul>
-    <p>Where processing is based on your consent, you can withdraw that consent at any time for the future.</p>
-    <p>You also have the right to lodge a complaint with a data protection supervisory authority (Article 77 GDPR).</p>
+    <p>Where we rely on your consent, you can withdraw it at any time, with effect for the future.</p>
+    <p>You can also complain to a data protection authority (Art. 77 GDPR).</p>
 
     <h2>11. No ads. No tracking.</h2>
-    <p>We don't use your data for personalised advertising, create advertising profiles, or sell user information.</p>
-    <p>Our own servers are located in Germany.</p>
+    <p>We don't use your data for personalised advertising, we don't build advertising profiles, and we don't sell user data.</p>
+    <p>Our servers are in Germany.</p>
 
     <h2>12. Contact</h2>
-    <p>For questions about privacy or deleting your data, contact:</p>
+    <p>Questions about privacy, or want your data deleted?</p>
     <p><a href="mailto:privacy@anydecks.app">privacy@anydecks.app</a></p>
 
-    <hr style="border:0;border-top:1px solid var(--edge);margin:48px 0" id="de">
-
-    <h1>Datenschutz</h1>
-    <p>anydecks ist eine Desktop-App für DJs, die von verschiedenen Orten aus Back-to-Back auflegen (geschlossene Beta).</p>
-    <h2>Gespeichert</h2>
-    <p>DJ-Name, ein auf Deinem Rechner erzeugter Schlüssel, Freunde und offene Anfragen, Anlegedatum, freiwillig Bio, Links und Styles. Bei Anmeldung mit Google nur Googles anonyme Nutzernummer – keine E-Mail-Adresse, keine Kontakte. Bei Anmeldung mit E-Mail-Code nur ein nicht umkehrbarer Fingerabdruck der Adresse (SHA-256), nie die Adresse selbst; zum Versand des sechsstelligen Codes gehen Adresse und Code einmal an unseren Mail-Dienst <strong>Brevo</strong> (Sendinblue SAS, Frankreich, EU), der die Mail in unserem Auftrag zustellt. Der Code gilt 10 Minuten und liegt nur im Arbeitsspeicher. Dein Rechner bekommt einen vom Server unterschriebenen Ausweis (30 Tage), der auf Deinem Rechner liegt. Einladungen: Code, wer eingeladen hat, wer ihn genutzt hat. Lobby (nur wenn eingeschaltet): dass Du gesehen werden willst – solange Du online bist, sehen andere angemeldete DJs Deinen DJ-Namen und können Dir eine Freundschaftsanfrage schicken. Brett (nur was Du einträgst): Deine geplanten Zeiten und Deine Worte, für alle angemeldeten DJs mit Deinem DJ-Namen sichtbar; gelöscht, wenn die Zeit vorbei ist oder Du den Eintrag entfernst.</p>
-    <h2>Kurzzeitig verarbeitet</h2>
-    <p>IP-Adresse und Port, solange die App online ist (nur im Arbeitsspeicher), damit Ihr Euch findet. Ein kleines Protokoll: einmal pro Minute, wie viele online sind, und Ereignisse wie „mit Google angemeldet“ – ohne Namen, Adressen oder E-Mail-Adressen; es überschreibt sich nach etwa 1 MB. Auf get.anydecks.app ein Cookie, das Dich angemeldet hält – bis zum Schließen des Browsers (höchstens 12 Stunden) oder mit „angemeldet bleiben“ 30 Tage nach dem letzten Besuch; der Server speichert nur einen Fingerabdruck davon (technisch nötig, sonst nichts).</p>
-    <h2>Musik und Dateien</h2>
-    <p>Mix und Tracks gehen Ende-zu-Ende-verschlüsselt direkt zum Partner, notfalls verschlüsselt über unseren Server, der sie weder lesen noch speichern kann. Geteilte Tracks liegen beim Partner im Arbeitsspeicher, was nicht passt verschlüsselt auf seiner Platte (Schlüssel nur, solange die App läuft); gelöscht beim Beenden und eine Minute, nachdem Du die Session verlassen hast. Aufnahmen und Play-Historie bleiben auf Deinem Rechner. Deine Sammlung (rekordbox, VirtualDJ, Serato) wird nur auf Deinem Rechner gelesen, nie hochgeladen.</p>
-    <h2>Nicht</h2>
-    <p>Keine Werbung, kein Tracking, keine Weitergabe. Der Server steht in Deutschland. Auskunft, Berichtigung, Löschung und Beschwerde bei einer Aufsichtsbehörde nach DSGVO Art. 15–21 und 77. Kontakt: <a href="mailto:privacy@anydecks.app">privacy@anydecks.app</a>.</p>
   </section>
 
   <footer><a href="/">Home</a><span>© 2026 anydecks</span></footer>
