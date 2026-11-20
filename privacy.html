@@ -13,7 +13,7 @@
 
   <section class="doc">
     <h1>Privacy</h1>
-    <p class="date">Last updated: November 17, 2026</p>
+    <p class="date">Last updated: November 20, 2026</p>
     <p>anydecks lets you play back-to-back with other DJs, wherever you are.</p>
     <p>This page explains what data anydecks processes, why, and how long we keep it.</p>
 
@@ -55,6 +55,12 @@
     <p>To connect you with your partner, our server needs your IP address and network port. It keeps them in memory only, and only while you're online.</p>
     <p>To keep the service running smoothly, the server logs how many people are online once a minute, plus general events such as sign-ins and new invitations.</p>
     <p>The log contains no DJ names, IP addresses or email addresses. Once it reaches about 1 MB, the oldest entries are overwritten.</p>
+    <h3>Activity history</h3>
+    <p>During the closed beta, we also keep a short history of activity: when a DJ came online or went offline, and which DJs were connected to each other, for how long, and whether directly or through our server.</p>
+    <p>Each entry has a time and DJ names – no IP addresses, no music, no chat.</p>
+    <p>We use it to find faults and to spot misuse. Only the anydecks team can see it. Entries are deleted after 30 days.</p>
+    <h3>Update checks</h3>
+    <p>Every 30 minutes, the app asks our server whether a new version is out. The request carries nothing but your IP address, and we don't store it.</p>
     <p>Legal basis: Art. 6(1)(b) GDPR for connecting you, Art. 6(1)(f) GDPR for keeping the service secure and reliable.</p>
 
     <h2>5. Your music stays yours</h2>
@@ -71,14 +77,32 @@
     <p>anydecks can read your rekordbox, Traktor, Serato, VirtualDJ or djay Pro library.</p>
     <p>This happens entirely on your computer. Your library is never uploaded.</p>
 
-    <h2>6. Cookies</h2>
+    <h2>6. LIVE: friends listening in</h2>
+    <h3>If you go live</h3>
+    <p>When you press LIVE, your app sends your mix to our server, along with what's playing and who's playing it (track title, artist, DJ name).</p>
+    <p>You get a link that can't be guessed, new for every broadcast. Anyone with the link can listen, so share it only with people you want to hear you.</p>
+    <p>The server keeps only the last 90 seconds of sound, in memory. Nothing is recorded or written to disk. The link stops working 30 minutes after the broadcast ends.</p>
+    <h3>If you listen</h3>
+    <p>You don't need an account. The page plays the stream and shows what's playing.</p>
+    <p>So the DJ can see how many people are listening, the page creates a random number for your browser tab. It's kept only until you close the tab.</p>
+    <p>The server counts these numbers for 30 seconds at a time. It doesn't store who you are, your IP address or how long you listened.</p>
+    <p>Legal basis: Art. 6(1)(b) GDPR for the DJ, Art. 6(1)(f) GDPR for listeners, and § 25(2) no. 2 TDDDG for the number in your browser.</p>
+
+    <h2>7. Crash reports</h2>
+    <p>If the app crashes, it writes a short report and sends it to us the next time it starts.</p>
+    <p>The report contains the app version, your operating system, the kind of error and where in the app it happened.</p>
+    <p>It contains no account, no DJ name, no music and no files. Your user name and folder names are removed before it's sent.</p>
+    <p>To prevent floods, the server counts reports per IP address for one hour, in memory only. Reports are deleted after 90 days.</p>
+    <p>Legal basis: Art. 6(1)(f) GDPR (fixing faults).</p>
+
+    <h2>8. Cookies</h2>
     <p>On get.anydecks.app, we use a single essential cookie to keep you signed in.</p>
     <p>It expires when you close your browser, after twelve hours at most.</p>
     <p>If you tick "Stay signed in", it stays valid for up to 30 days after your last visit.</p>
     <p>Our server stores only a fingerprint of the cookie. It's used to keep you signed in – never for advertising or tracking.</p>
     <p>Legal basis: Art. 6(1)(b) GDPR and § 25(2) TDDDG (German Telecommunications Digital Services Data Protection Act).</p>
 
-    <h2>7. Service providers</h2>
+    <h2>9. Service providers</h2>
     <p>We don't sell your data or share it for advertising.</p>
     <p>To run anydecks, we use:</p>
     <ul>
@@ -89,7 +113,7 @@
     <p>Where a provider processes personal data on our behalf, a data processing agreement is in place.</p>
     <p>Possible transfers of personal data outside the European Economic Area and the safeguards involved still need to be fully verified.</p>
 
-    <h2>8. How long we keep your data</h2>
+    <h2>10. How long we keep your data</h2>
     <p>We keep personal data only as long as we need it, or as long as the law requires.</p>
     <ul>
       <li>Account and profile: as long as your account exists. How soon after closing an account it is deleted is still to be decided.</li>
@@ -99,15 +123,18 @@
       <li>Lobby: until you turn it off or go offline.</li>
       <li>Board: until the time of your post has passed or you remove it.</li>
       <li>Server log: overwritten once it reaches about 1 MB.</li>
+      <li>Activity history: 30 days.</li>
+      <li>LIVE: the last 90 seconds of sound, in memory only. Listener count: 30 seconds.</li>
+      <li>Crash reports: 90 days.</li>
       <li>Shared tracks: deleted when the app closes, or one minute after you leave the session.</li>
       <li>Website sign-in: twelve hours at most, or up to 30 days after your last visit with "Stay signed in".</li>
     </ul>
 
-    <h2>9. Deleting your account</h2>
+    <h2>11. Deleting your account</h2>
     <p>You can ask us to delete your account and your personal data at any time. Just email <a href="mailto:privacy@anydecks.app">privacy@anydecks.app</a>.</p>
     <p>We'll delete everything, unless the law requires us to keep it.</p>
 
-    <h2>10. Your rights</h2>
+    <h2>12. Your rights</h2>
     <p>Under the GDPR, you have the right to:</p>
     <ul>
       <li>access your personal data (Art. 15),</li>
@@ -120,11 +147,11 @@
     <p>Where we rely on your consent, you can withdraw it at any time, with effect for the future.</p>
     <p>You can also complain to a data protection authority (Art. 77 GDPR).</p>
 
-    <h2>11. No ads. No tracking.</h2>
+    <h2>13. No ads. No tracking.</h2>
     <p>We don't use your data for personalised advertising, we don't build advertising profiles, and we don't sell user data.</p>
     <p>Our servers are in Germany.</p>
 
-    <h2>12. Contact</h2>
+    <h2>14. Contact</h2>
     <p>Questions about privacy, or want your data deleted?</p>
     <p><a href="mailto:privacy@anydecks.app">privacy@anydecks.app</a></p>
 
